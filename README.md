@@ -10,22 +10,14 @@ Note: Do not remove any elements that were included in the screen. You may add a
 In mainscreen.html I modified the shop name on lines 14 and 19.
 I changed "Parts" to "Building Supplies" on line 21.
 I changed "Products" to "Furniture Pieces" on line 53.
-I added the following building supplies using the built in interface:
-- Wooden Plank
-- Wool
-- Stick
-- Cobblestone
-- Coal
 
-I added the following furniture pieces using the built in interface:
-- Chest
-- Bed
-- Ladder
-- Torch
-- Furnace
 
 ## D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers. 
 Include navigation to and from the “About” page and the main screen.
+
+I added about.html to templates (src/main/resources/templates/about.html). 
+I added AboutController to controllers (src/main/java/com/example/demo/controllers/AboutController.java).
+I added a link to the about page on mainscreen.html on line 21.
 
 
 ## E.  Add a sample inventory appropriate for your chosen store to the application. 

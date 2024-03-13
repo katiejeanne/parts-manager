@@ -18,6 +18,8 @@
 <div class="container">
     <h1>Steve's Furniture</h1>
     <hr>
+    <a th:href="@{/about}">About Us</a>
+    <hr>
     <h2>Building Supplies</h2>
     <form th:action="@{/mainscreen}">
         Filter: <input type="text" name="partkeyword" id="partkeyword" size="50" th:value="${partkeyword}" required />
