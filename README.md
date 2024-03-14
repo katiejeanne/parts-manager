@@ -35,6 +35,9 @@
 ## F.  Add a “Buy Now” button to your product list. 
 *Your “Buy Now” button must meet each of the following parameters: The “Buy Now” button must be next to the buttons that update and delete products.  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts. Display a message that indicates the success or failure of a purchase.*
 
+- I added the Buy Now link to mainscreen.html line 87
+- I created the BuyProductController class and wrote the logic for the Buy Now button
+- I created the confirmationpurchaseproduct.html, purchaseerror.html, and zeroerror.html files to display the result
 
 ## G.  Modify the parts to track maximum and minimum inventory.
 *Accomplish this by doing the following: 1. Add additional fields to the part entity for maximum and minimum inventory. 2. Modify the sample inventory to include the maximum and minimum fields. 3. Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values. 4. Rename the file the persistent storage is saved to. 5. Modify the code to enforce that the inventory is between or at the minimum and maximum value.*
