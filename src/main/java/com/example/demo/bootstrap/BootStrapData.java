@@ -13,6 +13,7 @@ import com.example.demo.service.ProductServiceImpl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -86,6 +87,8 @@ public class BootStrapData implements CommandLineRunner {
         woodenPlank3Pack.setInv(20);
         woodenPlank3Pack.setPrice(60.0);
         woodenPlank3Pack.setId(101L);
+        woodenPlank3Pack.setMinInv(5);
+        woodenPlank3Pack.setMaxInv(500);
         outsourcedPartRepository.save(woodenPlank3Pack);
 
         OutsourcedPart woodenPlank8Pack = new OutsourcedPart();
@@ -94,6 +97,8 @@ public class BootStrapData implements CommandLineRunner {
         woodenPlank8Pack.setInv(20);
         woodenPlank8Pack.setPrice(160.0);
         woodenPlank8Pack.setId(102L);
+        woodenPlank8Pack.setMinInv(5);
+        woodenPlank8Pack.setMaxInv(500);
         outsourcedPartRepository.save(woodenPlank8Pack);
 
         OutsourcedPart wool3Pack = new OutsourcedPart();
@@ -102,6 +107,8 @@ public class BootStrapData implements CommandLineRunner {
         wool3Pack.setInv(20);
         wool3Pack.setPrice(90.0);
         wool3Pack.setId(200L);
+        wool3Pack.setMinInv(5);
+        wool3Pack.setMaxInv(500);
         outsourcedPartRepository.save(wool3Pack);
 
         OutsourcedPart cobblestone8Pack = new OutsourcedPart();
@@ -110,6 +117,8 @@ public class BootStrapData implements CommandLineRunner {
         cobblestone8Pack.setInv(20);
         cobblestone8Pack.setPrice(160.0);
         cobblestone8Pack.setId(300L);
+        cobblestone8Pack.setMinInv(5);
+        cobblestone8Pack.setMaxInv(500);
         outsourcedPartRepository.save(cobblestone8Pack);
 
         OutsourcedPart stick = new OutsourcedPart();
@@ -118,6 +127,8 @@ public class BootStrapData implements CommandLineRunner {
         stick.setInv(50);
         stick.setPrice(5.0);
         stick.setId(400L);
+        stick.setMinInv(5);
+        stick.setMaxInv(500);
         outsourcedPartRepository.save(stick);
 
         OutsourcedPart stick7Pack = new OutsourcedPart();
@@ -126,6 +137,8 @@ public class BootStrapData implements CommandLineRunner {
         stick7Pack.setInv(20);
         stick7Pack.setPrice(35.0);
         stick7Pack.setId(401L);
+        stick7Pack.setMinInv(5);
+        stick7Pack.setMaxInv(500);
         outsourcedPartRepository.save(stick7Pack);
 
 
@@ -135,6 +148,8 @@ public class BootStrapData implements CommandLineRunner {
         coal.setInv(50);
         coal.setPrice(15.0);
         coal.setId(500L);
+        coal.setMinInv(5);
+        coal.setMaxInv(500);
         outsourcedPartRepository.save(coal);
     }
 

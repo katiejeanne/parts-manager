@@ -42,12 +42,24 @@
 ## G.  Modify the parts to track maximum and minimum inventory.
 *Accomplish this by doing the following: 1. Add additional fields to the part entity for maximum and minimum inventory. 2. Modify the sample inventory to include the maximum and minimum fields. 3. Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values. 4. Rename the file the persistent storage is saved to. 5. Modify the code to enforce that the inventory is between or at the minimum and maximum value.*
 
+- I added minInv and maxInv to the Part class on lines 35-38
+- I added getters and setters for minInv and maxInv to the Part class on lines 97-104
+- I added minInv and maxIn to the constructors on lines 52 & 53 and lines 61 & 62
+- I modified BootStrapData on lines 90 & 91, 100 & 101, 110 & 111, 120 & 121, 130 & 131, 140 & 141, and 150 & 151
+- I modified the OutsourcedPartForm to include minInv and maxInv on lines 25-30 
+- I modified the InhousePartForm to include minInv and maxInv on lines 24-29
+- I renamed the database and also updated the reference in application.properties on line 6
+- Modifying the code to validate minInv and maxInv is covered in part H
 
 ## H.  Add validation for between or at the maximum and minimum fields. 
-*The validation must include the following:
-•  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
-•  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
-•  Display error messages when adding and updating parts if the inventory is greater than the maximum.*
+*The validation must include the following: •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.  •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum. •  Display error messages when adding and updating parts if the inventory is greater than the maximum.*
+
+- I created two new validators, MaxInvPartValidator and MinInvPartValidator
+- I also created two new validation constraint annotations, ValidMaxInvPart and ValidMinInvPart
+- I added these validators to the Part class on lines 21 & 22 and imported on lines 4 & 5
+- I added code to display these errors on OutsourcedPartForm on lines 33-35 and InhousePartForm on lines 32-34
+- I modified EnufPartsValidator to check against minInv instead of just being larger than 0 on line 36
+- I modified ValidEnufParts to update the error message on line 20
 
 
 ## I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.

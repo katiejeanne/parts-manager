@@ -13,11 +13,11 @@ import java.lang.annotation.Target;
  *
  *
  */
-@Constraint(validatedBy = {EnufPartsValidator.class})
+@Constraint(validatedBy = {MinInvPartValidator.class})
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ValidEnufParts {
-    String message() default "Products cannot be created because one or more parts will be reduced to less than their minimum inventory.";
+public @interface ValidMinInvPart {
+    String message() default "Inventory amount does not meet minimum requirements.";
     Class<?> [] groups() default {};
     Class<? extends Payload> [] payload() default {};
 
