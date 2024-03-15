@@ -63,6 +63,6 @@
 
 
 ## I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-
+- I added unit tests for getMinInv(), setMinInv(), getMaxInv(), and setMaxInv() on lines 103-138 in PartTest
 
 ## J.  Remove the class files for any unused validators in order to clean your code.
