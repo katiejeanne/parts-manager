@@ -104,7 +104,7 @@ class PartTest {
     @Test
     void getMinInv() {
         int minInv=2;
-        partIn.setMinInv((minInv);
+        partIn.setMinInv(minInv);
         assertEquals(minInv,partIn.getMinInv());
         partOut.setMinInv(minInv);
         assertEquals(minInv,partOut.getMinInv());
@@ -113,7 +113,7 @@ class PartTest {
     @Test
     void setMinInv() {
         int minInv=2;
-        partIn.setMinInv((minInv);
+        partIn.setMinInv(minInv);
         assertEquals(minInv,partIn.getMinInv());
         partOut.setMinInv(minInv);
         assertEquals(minInv,partOut.getMinInv());
